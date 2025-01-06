@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Todo App</h1>
+      <div class="app">
+        <div class="input-container">
+          <input type="text" id="text-input" placeholder="Enter Task" />
+          <input type="date" id="date-input" />
+          <input type="time" id="time-input" />
+          <button id="add-task" onclick="addTask()">Add</button>
+        </div>
+        <ol id="task-ul-list"></ol>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

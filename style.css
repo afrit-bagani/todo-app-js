@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  height: 600px;
+  width: 600px;
+  background: linear-gradient(60deg, #0a0a0a, #3a4452);
+  border: 0.5px solid #98989b;
+  border-radius: 7px;
+  box-shadow: 10px 10px 50px #464647;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  margin: 7px 0px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 70px;
+  text-align: center;
+  filter: drop-shadow(2px 2px 2px #ffffff);
+}
+
+.app {
+  height: 90%;
+  width: 98%;
+  background-color: transparent;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*  input(Task, Date, Time) container  */
+.input-container {
+  width: 95%;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 2px 2px 20px #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#text-input {
+  width: 150px;
+  padding: 15px 5px;
+  background-color: transparent;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+}
+#date-input,
+#time-input {
+  width: 75px;
+  padding: 15px 5px;
+  background-color: transparent;
+  border: 0.2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  background-color: transparent;
+}
+/*  Add Task Button  */
+#add-task {
+  height: 100%;
+  width: 80px;
+  padding: 5px 2px;
+  font-size: 18px;
+  color: white;
+  background-color: #39e515;
+  font-family: 700;
+  border: none;
+  border-radius: 7px;
+}
+/*  Task list container(ul) */
+#task-ul-list {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/*  
+      👇  Below this All are Dynamically Added class
+  */
+
+.task-list {
+  width: 95%;
+  padding: 5px 5px;
+  margin-top: 7px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 2px 2px 20px #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-list:hover {
+  transform: scale(1.02);
+}
+/*  Information about Task*/
+.task-info {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.done-button {
+  padding: 5px 10px;
+  margin: 2px;
+  color: white;
+  font-family: 700;
+  border-radius: 4px;
+  border: none;
+  background-color: #45a049;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.done-button:hover {
+  background-color: #45a049;
+}
+.delete-button {
+  padding: 5px 10px;
+  margin: 2px;
+  color: white;
+  font-family: 700;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #e30e0e;
+}
+.task-complete {
+  text-decoration: line-through;
+}
